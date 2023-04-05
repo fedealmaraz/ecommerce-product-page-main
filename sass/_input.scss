@@ -1,0 +1,36 @@
+@use 'variables';
+@use 'mixins';
+
+.input{
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    background-color: variables.$Light-grayish-blue;
+    &__menos{
+        width: 25px;
+        height: 100%;
+        padding: 24px 5px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+    &__number{
+        width: 100%;
+        border: none;
+        background-color: variables.$Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-align: center;
+        outline: none;
+    }
+    &__mas{
+        width: 25px;
+        height: 100%;
+        padding: 19px 3px;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@use 'variables';
+@use 'mixins';
+
+.modal-gallery{
+    &__background{
+    @include mixins.fade-gallery;
+    display: none;
+    //display: grid;
+    place-content: center;
+    } 
+    &__article{
+        height: 650px;
+    }
+    &__cerrar-container{
+        text-align: right;
+        padding: 5px;
+        height: 35px;
+    }
+    &__cerrar{
+        width: 16px;
+        &:hover{
+            cursor: pointer;
+            color: variables.$Orange;
+        }
+    }
+    &__image-container{
+        background-image: url(../images/image-product-1.jpg);
+        height: 545px;
+        width: 550px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        position: relative;
+        &:hover{
+            cursor: zoom-in;
+        }
+    }
+    &__antes{
+        @include mixins.image-btn(240px, -20px, true);
+    } 
+    &__despues{
+        @include mixins.image-btn(240px, 520px, true);
+    }
+    &__thumbnails{
+            display: flex;
+            justify-content: space-between;
+            width: 450px;
+            margin: auto;
+    }
+    &__thumbnail{
+        width: 90px;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            opacity: 0.5;
+        }
+    }
+    
+} 

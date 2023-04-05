@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Kumbh+Sans">
+
+  <title>E-commerce product page</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="main-container">
+    <header class="header">
+      <div class="header__nav">
+        <img class="header__menu" src="/images/icon-menu.svg" alt="icon-menu">
+        <img class="header__logo" src="/images/logo.svg" alt="logo">
+        <div>
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li><a class="navbar__link" href="#">Collections</a></li>
+              <li><a class="navbar__link" href="#">Men</a></li>
+              <li><a class="navbar__link" href="#">Women</a></li>
+              <li><a class="navbar__link" href="#">About</a></li>
+              <li><a class="navbar__link" href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <!--Inicio Mobile navbar-->
+      <div class="mobile-navbar__background">
+        <nav class="mobile-navbar">
+          <img class="mobile-navbar__close-icon" src="/images/icon-close.svg" alt="mobile-navbar">
+          <ul class="mobile-navbar__items">
+            <li><a class="mobile-navbar__link" href="#">Collections</a></li>
+            <li><a class="mobile-navbar__link" href="#">Men</a></li>
+            <li><a class="mobile-navbar__link" href="#">Women</a></li>
+            <li><a class="mobile-navbar__link" href="#">About</a></li>
+            <li><a class="mobile-navbar__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--Final Mobile navbar-->
+      <div class="header__carrito-perfil">
+        <div class="header__carrito">
+          <div class="header__carrito--notification">3</div>
+          <img src="/images/icon-cart.svg" alt="carrito">
+        </div>
+        <img class="header__perfil" src="/images/image-avatar.png" alt="perfil">
+      </div>
+    </header>
+
+    <section class="content">
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__antes" src="/images/icon-previous.svg" alt="antes">
+          <img class="gallery__despues" src="/images/icon-next.svg" alt="despues">
+        </div>
+        <div class="gallery__thumbnails">
+          <img id="1" class="gallery__thumbnail" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img id="2" class="gallery__thumbnail" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img id="3" class="gallery__thumbnail" src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img id="4" class="gallery__thumbnail" src="/images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </article>
+
+      <article class="detalles">
+        <h2 class="detalles__company">Sneaker Company</h2>
+        <h2 class="detalles__tittle">Fall Limited Edition Sneakers</h2>
+        <p class="detalles__description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="detalles__precios">
+          <p class="detalles__ahora">$125.00 <span class="detalles__descuento">50%</span></p>
+          <p class="detalles__antes">$250.00</p>
+        </div>
+        <div class="detalles__agregar">
+          <div class="input">
+            <img class="input__menos" src="/images/icon-minus.svg" alt="" srcset="">
+            <input class="input__number" type="text" value="0">
+            <img class="input__mas" src="images/icon-plus.svg" alt="" srcset="">
+          </div>
+          <button class="detalles__button"> <img src="/images/icon-cart-white.svg">Add to cart</button>
+        </div>
+      </article>
+    </section>
+    <!--Inicio carrito-->
+    <div class="cart-modal">
+      <p class="cart-modal__tittle">Cart</p>
+      <div class="cart-modal__checkout-container">
+        <div class="cart-modal__details-container">
+          <img class="cart-modal__image"src="/images/image-product-1-thumbnail.jpg" alt="" srcset="">
+          <div>
+            <p class="cart-modal__producto">Autumn Limited Edition</p>
+            <p class="cart-modal__precio">$125.00 x 3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete" src="/images/icon-delete.svg" alt="">
+        </div>
+        <button class="cart-modal__checkout">Pagar</button>
+      </div>
+    </div>
+    <!--Fin carrito-->
+
+    <!--Inicio gallery modulo-->
+    <div class="modal-gallery__background">
+      <article class="modal-gallery__article">
+        <div class="modal-gallery__cerrar-container">
+          <img class="modal-gallery__cerrar" src="/images/icon-close.svg" alt="">
+        </div>
+        <div class="modal-gallery__image-container">
+          <img class="modal-gallery__antes" src="/images/icon-previous.svg" alt="antes">
+          <img class="modal-gallery__despues" src="/images/icon-next.svg" alt="despues">
+        </div>
+        <div class="modal-gallery__thumbnails">
+          <img id="m1" class="modal-gallery__thumbnail" src="/images/image-product-1-thumbnail.jpg" alt="">
+          <img id="m2" class="modal-gallery__thumbnail" src="/images/image-product-2-thumbnail.jpg" alt="">
+          <img id="m3" class="modal-gallery__thumbnail" src="/images/image-product-3-thumbnail.jpg" alt="">
+          <img id="m4" class="modal-gallery__thumbnail" src="/images/image-product-4-thumbnail.jpg" alt="">
+        </div>
+      </article>
+    </div>
+    <!--Fin gallery modulo-->
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.instagram.com/fedealmaraz" target="_blank">Federico Almaraz</a>.
+  </footer>
+</body>
+
+</html>

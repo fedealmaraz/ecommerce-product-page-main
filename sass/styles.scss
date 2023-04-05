@@ -1,0 +1,29 @@
+@use 'initial'; //llamo a mi hoja initial
+@use 'variables'; //llamo a mis variables
+@use 'header';
+@use 'navbar';
+@use 'mobile-navbar';
+@use 'mixins';
+@use 'gallery';
+@use 'modal-gallery';
+@use 'carrito';
+@use 'detalles';
+@use 'input';
+
+
+
+.main-container {
+    width: 375px;
+    margin: auto;
+    position: relative;
+    @media (min-width: 1115px){
+            width: 1115px;
+    }
+}
+.content{
+    @media (min-width: 1115px) {
+        display: flex;
+        padding: 90px 50px;   
+        gap: 124px;
+    }
+}
